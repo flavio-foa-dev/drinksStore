@@ -1,0 +1,19 @@
+/* Estilos personalizados */
+.drink-button {
+  font-size: 18px;
+
+
+}
+
+.action-button {
+  font-size: 14px;
+}
+
+/* Adaptação para dispositivos móveis */
+@media (max-width: 767px) {
+  .grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+
+
+  }
+}

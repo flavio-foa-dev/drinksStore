@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máquina de Refrigerante</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-200 p-4">
+
+    <div class="container mx-auto max-w-md">
+        <h1 class="text-2xl font-semibold mb-4">Máquina de Refrigerante</h1>
+
+        <div id="display" class="bg-white p-2 mb-2 text-center">Selecione uma bebida</div>
+
+        <div class="grid grid-cols-2  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <button class="drink-button bg-blue-500 text-white p-2" onclick="selectDrink('Coca-Cola')">Coca-Cola</button>
+          <button class="drink-button bg-red-500 text-white p-2" onclick="selectDrink('Pepsi')">Pepsi</button>
+          <button class="drink-button bg-green-500 text-white p-2" onclick="selectDrink('Sprite')">Sprite</button>
+          <button class="drink-button bg-red-400 text-white p-2" onclick="selectDrink('Fanta Laranja')">Fanta Laranja</button>
+          <button class="drink-button bg-green-500 text-white p-2" onclick="selectDrink('Guaraná Antarctica')">Guaraná Antarctica</button>
+          <button class="drink-button bg-gray-800 text-white p-2" onclick="selectDrink('Água com Gás')">Água com Gás</button>
+
+          <button class="drink-button bg-pink-500 text-white p-2" onclick="selectDrink('Chá Gelado de Pêssego')">Chá Gelado de Pêssego</button>
+          <button class="drink-button bg-green-600 text-white p-2" onclick="selectDrink('Limonada')">Limonada</button>
+          <button class="drink-button bg-purple-500 text-white p-2" onclick="selectDrink('Ice Tea')">Ice Tea</button>
+          <button class="drink-button bg-yellow-500 text-white p-2" onclick="selectDrink('Mountain Dew')">Mountain Dew</button>
+          <button class="drink-button bg-purple-500 text-white p-2" onclick="selectDrink('Grape Soda')">Grape Soda</button>
+          <button class="drink-button bg-indigo-500 text-white p-2" onclick="selectDrink('Blue Raspberry')">Blue Raspberry</button>
+      </div>
+
+
+
+        <div class="mt-2">
+            <button class="action-button bg-green-500 text-white p-2" onclick="startVoiceRecognition()">Ativar Voz</button>
+            <button class="action-button bg-yellow-500 text-white p-2" onclick="processPayment()">Pagar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
