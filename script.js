@@ -1,6 +1,7 @@
 // Função para exibir a bebida selecionada no display
 function selectDrink(drink) {
   document.getElementById('display').innerText = `Selecionado: ${drink}`;
+  console.log(drink);
 }
 
 // Função para iniciar o reconhecimento de voz
